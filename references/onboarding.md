@@ -6,6 +6,20 @@ Use this reference when a user starts the skill for the first time, has no store
 
 Quickly calibrate the user's current product-management level and choose a case domain that makes practice feel realistic. Do not turn onboarding into an exam. The goal is to place the user in the right difficulty band and start practice quickly.
 
+## Language Selection
+
+At the start of onboarding, establish the user's preferred language.
+
+If the user's message clearly indicates a language, continue in that language without adding friction. If the language is unclear, ask a short language question before screening:
+
+```text
+Before we start, which language should we use for the training: English or Russian?
+```
+
+If the user chooses Russian, use Russian for ordinary coaching language and common English PM terms only when natural. If the user chooses English, conduct the full training in English.
+
+Do not ask for language again unless the user requests a switch.
+
 ## PM Levels
 
 Use the canonical five-level system from `references/level_system.md`.
@@ -54,13 +68,14 @@ Limit the post-screening debrief to: estimated level, two strengths, two trainin
 
 For a true first run or an unconfirmed saved state, use this sequence:
 
-1. If existing state is present and unconfirmed, ask whether to use it or start fresh.
-2. If starting fresh, offer two paths:
+1. Establish language if unclear.
+2. If existing state is present and unconfirmed, ask whether to use it or start fresh.
+3. If starting fresh, offer two paths:
    - full screening: 10 questions, one at a time.
    - fast start: 2-3 calibration questions, then a first case.
-3. After calibration, ask for domain selection or accept custom context.
-4. Show a compact learning path summary only after calibration.
-5. Start the first case immediately after the user chooses the domain.
+4. After calibration, ask for domain selection or accept custom context.
+5. Show a compact learning path summary only after calibration.
+6. Start the first case immediately after the user chooses the domain.
 
 Suggested first-run message when state exists:
 
@@ -72,6 +87,12 @@ Suggested first-run message when no state exists:
 
 ```text
 Давай откалибруем уровень и быстро перейдем к практике. Могу сделать полный скрининг на 10 вопросов или быстрый старт на 2-3 вопроса, а потом выберем домен кейсов.
+```
+
+Suggested first-run message when language is unclear and no state exists:
+
+```text
+Before we start, which language should we use for training: English or Russian? After that I can run a full 10-question screening or a fast 2-3 question calibration and move straight into a case.
 ```
 
 ## Domain Selection

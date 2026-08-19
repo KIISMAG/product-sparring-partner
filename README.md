@@ -7,6 +7,7 @@ The skill is designed to act like a Product Lead in a practice session, not like
 ## What It Does
 
 - Calibrates the user's PM level with a lightweight 10-question screening.
+- Supports English or Russian training, with language selection during onboarding when needed.
 - Lets the user choose a practice domain or provide a vacancy/product/company context.
 - Runs live simulations where decisions change the next situation.
 - Gives concise feedback on reasoning, trade-offs, assumptions, risks, and metrics.
@@ -38,6 +39,8 @@ Use $product-sparring-partner. I want to train product thinking from scratch.
 The skill should offer a short screening, estimate a starting level, ask for a domain, and begin the first case.
 
 The training path is finite: users progress when they meet level criteria consistently, not after a fixed number of cases.
+
+If the user's language is unclear, the skill should ask whether to train in English or Russian before screening.
 
 ## Practice Domains
 

@@ -43,6 +43,7 @@ Use $product-sparring-partner. Change the domain to FinTech.
 Expected behavior:
 
 - The agent offers screening or fast start.
+- The agent asks for English/Russian language preference when the user's language is unclear.
 - It asks one question at a time.
 - It does not rely on another user's state.
 - It lets the user choose or change domain.
