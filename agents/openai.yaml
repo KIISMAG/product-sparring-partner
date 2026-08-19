@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Sparring Partner"
+  short_description: "Train product thinking through live sparring"
+  default_prompt: "Use $product-sparring-partner to run a focused product thinking sparring session."

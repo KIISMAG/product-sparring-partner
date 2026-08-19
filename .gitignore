@@ -1,0 +1,9 @@
+# Runtime memory is private by default.
+state/*.md
+!state/.gitkeep
+
+# Local OS/editor noise.
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
