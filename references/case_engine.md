@@ -45,6 +45,19 @@ Decision required:
 
 Include enough information to reason, but leave meaningful uncertainty.
 
+When a case contains quantitative data, present it as a copy-friendly table, not as a bullet list. Prefer Markdown tables with one metric per row and raw numeric values without thousands separators so the user can copy the data into Excel or Google Sheets. If the table needs calculated columns, include clear column names such as `metric`, `value`, `conversion`, `segment`, `control`, `test`, or `period`.
+
+Example:
+
+```text
+| metric | value |
+|---|---:|
+| visitors | 100000 |
+| signups | 20000 |
+| activated_users | 10000 |
+| paid_users | 2000 |
+```
+
 ## Difficulty Ladder
 
 Use the canonical L1-L5 scale from `references/level_system.md`.

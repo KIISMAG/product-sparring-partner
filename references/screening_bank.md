@@ -4,10 +4,21 @@ Use these questions for the default 10-question onboarding screening. Ask one qu
 
 Score reasoning, not exact wording.
 
+When a screening question includes numeric data, present the data as a copy-friendly table. Use raw values without thousands separators.
+
 ## Questions
 
 1. Funnel reading.
-   A product has 100000 visitors, 20000 signups, 10000 activated users, and 2000 paid users. Which step would you inspect first and why?
+   A product has this monthly funnel:
+
+   | metric | value |
+   |---|---:|
+   | visitors | 100000 |
+   | signups | 20000 |
+   | activated_users | 10000 |
+   | paid_users | 2000 |
+
+   Which step would you inspect first and why?
 
 2. Metric choice.
    A team improves onboarding completion from 40% to 55%, but paid conversion is flat. What would you check next?

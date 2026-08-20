@@ -24,6 +24,8 @@ Do not reveal all future consequences upfront. Let the user's decisions shape th
 
 When starting or materially changing a simulation, use the state template from `references/simulation_state.md` so outcomes remain causal rather than arbitrary.
 
+Present funnel, metric, segment, experiment, revenue, and cohort data as tables whenever possible. Avoid long numeric bullet lists. Use raw values without thousands separators so the user can copy the table into spreadsheets and calculate conversions.
+
 ## Scenario Ingredients
 
 Prefer realistic situations involving:
