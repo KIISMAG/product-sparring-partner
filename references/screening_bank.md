@@ -1,4 +1,4 @@
-# Screening Bank
+# Банк скрининга
 
 Use these questions for the default 10-question onboarding screening. Ask one question at a time. Adapt numbers and domains lightly if the user has provided context.
 
@@ -6,10 +6,12 @@ Score reasoning, not exact wording.
 
 When a screening question includes numeric data, present the data as a copy-friendly table. Use raw values without thousands separators.
 
-## Questions
+In Russian sessions, ask questions and label sections in Russian. Keep metric field names in tables when they are useful for spreadsheet work.
 
-1. Funnel reading.
-   A product has this monthly funnel:
+## Вопросы
+
+1. Чтение воронки.
+   У продукта есть месячная воронка:
 
    | metric | value |
    |---|---:|
@@ -18,65 +20,65 @@ When a screening question includes numeric data, present the data as a copy-frie
    | activated_users | 10000 |
    | paid_users | 2000 |
 
-   Which step would you inspect first and why?
+   Какой шаг ты посмотрел бы первым и почему?
 
-2. Metric choice.
-   A team improves onboarding completion from 40% to 55%, but paid conversion is flat. What would you check next?
+2. Выбор метрики.
+   Команда улучшила прохождение onboarding с 40% до 55%, но конверсия в оплату не изменилась. Что проверишь дальше?
 
-3. Hypotheses.
-   Search usage dropped 20% week over week. Name three plausible explanations before choosing one.
+3. Гипотезы.
+   Использование поиска упало на 20% неделя к неделе. Назови три правдоподобных объяснения, прежде чем выбрать одно.
 
-4. Segmentation.
-   Activation fell only for new users from paid ads. What segments or cuts would you request?
+4. Сегментация.
+   Активация упала только у новых пользователей из платной рекламы. Какие сегменты или срезы ты запросишь?
 
-5. Experiment design.
-   You want to test a new paywall. What is the main success metric and two guardrails?
+5. Дизайн эксперимента.
+   Ты хочешь протестировать новый paywall. Какая главная метрика успеха и две защитные метрики?
 
-6. Guardrails.
-   A push campaign increases app opens but complaints also rise. How do you decide whether to continue?
+6. Защитные метрики.
+   Push-кампания увеличила открытия приложения, но жалобы тоже выросли. Как решишь, продолжать ли?
 
-7. Prioritization.
-   You have two initiatives: one has high upside and high risk, the other has modest upside and low risk. What information do you need to choose?
+7. Приоритизация.
+   Есть две инициативы: у одной высокий потенциал и высокий риск, у другой умеренный потенциал и низкий риск. Какая информация нужна, чтобы выбрать?
 
-8. Trade-off.
-   Sales wants an enterprise integration for one large lead. Engineering says it will delay activation work by a month. How do you frame the decision?
+8. Компромисс.
+   Sales просит enterprise-интеграцию для одного крупного лида. Engineering говорит, что это задержит работу над активацией на месяц. Как ты сформулируешь решение?
 
-9. Stakeholder/business context.
-   Marketing wants more traffic, support wants fewer tickets, finance wants margin. How do you choose the product goal for the next quarter?
+9. Бизнес-контекст и интересы команд.
+   Marketing хочет больше трафика, Support хочет меньше обращений, Finance хочет маржу. Как выберешь продуктовую цель на следующий квартал?
 
-10. Decision under uncertainty.
-   Data is incomplete and the team must decide this week. What decision do you make, what assumption are you making, and what signal would change your mind?
+10. Решение в условиях неопределенности.
+   Данные неполные, но команде нужно решить на этой неделе. Какое решение принимаешь, на каком допущении оно держится и какой сигнал изменит твое мнение?
 
-## Scoring Signals
+## Сигналы оценки
 
-L1 signals:
+Сигналы L1:
 
-- defines terms but struggles to choose a next action.
-- names metrics without connecting them to a decision.
+- объясняет термины, но с трудом выбирает следующее действие.
+- называет метрики, но не связывает их с решением.
 
-L2 signals:
+Сигналы L2:
 
-- identifies the visible funnel problem.
-- proposes a reasonable metric or simple test.
-- may stop at one hypothesis.
+- видит заметную проблему воронки.
+- предлагает разумную метрику или простой тест.
+- может остановиться на одной гипотезе.
 
-L3 signals:
+Сигналы L3:
 
-- generates competing hypotheses.
-- asks about base rates, segments, sample size, and event definitions.
-- distinguishes leading and lagging metrics.
+- генерирует несколько конкурирующих гипотез.
+- спрашивает про базовые конверсии, сегменты, размер выборки и определения событий.
+- различает опережающие и запаздывающие метрики.
 
-L4 signals:
+Сигналы L4:
 
-- makes a bounded decision under constraints.
-- includes guardrails, rollout, stakeholder incentives, and opportunity cost.
+- принимает ограниченное решение с учетом ограничений.
+- включает защитные метрики, план запуска, интересы команд и альтернативную стоимость.
 
-L5 signals:
+Сигналы L5:
 
-- reasons across strategy, portfolio effects, monetization quality, and second-order consequences.
-- explains what not to optimize and why.
+- рассуждает на уровне стратегии, портфельных эффектов, качества монетизации и последствий второго порядка.
+- объясняет, что не нужно оптимизировать и почему.
 
-## Debrief Template
+## Шаблон разбора
 
 Keep it short:
 

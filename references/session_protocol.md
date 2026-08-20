@@ -26,20 +26,43 @@ Open with a short setup:
 - what the user must decide
 - what information is known and unknown
 
+For level-based training, include a compact approximate map before the first exercise. Phrase it as adaptive:
+
+```text
+Примерная карта:
+1. Калибровочный кейс
+2. 2-4 адаптивных раунда
+3. Короткое упражнение, если повторится один и тот же пробел
+4. Мини-проверка переноса навыка
+5. Финальная проверка, когда доказательств достаточно
+```
+
+Do not present the map as a promise that the learner will complete the level after a fixed number of questions.
+
 Then ask for the user's first move.
 
 ## During Practice
 
 Ask one question at a time. Prefer prompts that expose reasoning:
 
-- What is the business goal?
-- What are you assuming?
-- What would change your mind?
-- Which decision is reversible?
-- What trade-off are you accepting?
-- What is the first action you would take with incomplete data?
+- Какая бизнес-цель?
+- На каком допущении держится твое решение?
+- Какой сигнал изменит твое мнение?
+- Какое решение обратимо?
+- Какой компромисс ты принимаешь?
+- Что ты сделаешь первым при неполных данных?
 
 When the user answers, do not immediately solve the case. Push the thinking forward.
+
+After a meaningful answer plus review, show a compact progress summary before moving to the next round. Keep it short and actionable:
+
+```text
+Текущая цель: L4
+Стабильно получается: приоритизация, защитные метрики запуска
+Еще тренируем: конфликт интересов между командами
+Следующее доказательство: выбрать действие под давлением Sales при неполных данных
+Статус выхода: почти готов к финальной проверке
+```
 
 ## Decision Gate
 
@@ -58,10 +81,11 @@ If the user avoids choosing, call that out and ask them to make a bounded decisi
 
 End with:
 
-- one strongest move
-- one weak or risky thinking pattern
-- one improved version of the decision
-- dimension review
-- next practice focus
+- самый сильный ход
+- слабый или рискованный паттерн мышления
+- улучшенная версия решения
+- разбор по ключевым измерениям
+- следующий фокус практики
+- итог сессии после финальной проверки или закрытия уровня
 
 Update state only after the close.

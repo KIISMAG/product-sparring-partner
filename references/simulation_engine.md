@@ -70,6 +70,76 @@ Consequences should be plausible, mixed, and educational:
 
 Do not make every user decision fail. Reward good reasoning with improved state, but still include real-world messiness.
 
+## Stakeholder Pressure
+
+For realistic simulations, include occasional incoming messages from stakeholders such as CEO, Sales, Support, Finance, Engineering, Legal, Customer Success, partners, or customers.
+
+Use these messages to create emotional and organizational pressure, not theatrical noise. Each message should force a product-relevant tension:
+
+- growth target versus product quality.
+- enterprise revenue versus roadmap focus.
+- support burden versus activation gains.
+- compliance risk versus speed.
+- partner demand versus user value.
+- finance margin pressure versus customer acquisition.
+
+For L3+ simulations, include at least one meaningful stakeholder conflict in every substantial scenario after the first setup. A conflict means two roles are pushing toward different reasonable choices, and the learner must decide what goal dominates right now.
+
+Good stakeholder conflict:
+
+```text
+Входящее от CEO:
+Выручка в тестовой группе выросла. Почему мы не раскатываем это на всех завтра?
+
+Входящее от Support:
+Жалоб стало в 2 раза больше. Пользователи пишут, что продукт стал навязчивым.
+```
+
+Weak stakeholder pressure:
+
+```text
+Входящее от CEO:
+Что думаешь?
+```
+
+When using conflict, make the learner explicitly name:
+
+- whose pressure they are accepting.
+- whose pressure they are pushing back on.
+- which business goal decides the tie.
+- what risk they accept by disappointing one side.
+
+Keep incoming messages short and concrete. In Russian sessions, label them in Russian:
+
+```text
+Входящее от Sales:
+Мы можем закрыть 3000000 ARR в этом квартале, но клиенту нужен кастомный процесс согласования. Ты блокируешь сделку?
+```
+
+Vary stakeholder tone by role:
+
+| role | tone |
+|---|---|
+| CEO | коротко, жестко, через бизнес-результат |
+| Finance | runway, маржа, cash, дисциплина прогноза |
+| Support | жалобы, доверие, операционная боль |
+| Sales or Growth | срочность выручки, pipeline, обещания, цели |
+| Engineering | capacity, последовательность работ, технический долг, реализуемость |
+| Legal or Compliance | риск, публичные обещания, согласования, регуляторная нагрузка |
+| Customer Success | retention, adoption, здоровье аккаунтов |
+
+Use conflicting tones deliberately:
+
+| конфликт | что проверяет |
+|---|---|
+| CEO давит на рост, Support давит на доверие | отделяет здоровый рост от вредного роста |
+| Finance давит на cash, Product давит на удержание | отличает деньги сейчас от качества монетизации |
+| Sales давит на сделку, Engineering давит на capacity | видит альтернативную стоимость roadmap |
+| Legal тормозит обещания, Growth давит на конверсию | удерживает границы допустимого сообщения |
+| Customer Success давит на adoption, CEO давит на новый рынок | выбирает между текущей базой и стратегическим расширением |
+
+Do not let stakeholder messages replace data. Pair them with enough metrics, constraints, or qualitative signals for the user to reason.
+
 ## Interview Bridge
 
 The training goal is real product thinking, but the user also wants to get a product-management job. After a simulation turn, optionally translate the learning into interview language:
