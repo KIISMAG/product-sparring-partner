@@ -10,7 +10,7 @@ Quickly calibrate the user's current product-management level and choose a case 
 
 At the start of onboarding, establish the user's preferred language.
 
-If the user's message clearly indicates a language, continue in that language without adding friction. If the language is unclear, ask a short language question before screening:
+If the user's message clearly indicates a language, continue in that language without adding friction. If the language is unclear, ask a short language question before calibration:
 
 ```text
 Before we start, which language should we use for the training: English or Russian?
@@ -26,25 +26,25 @@ Use the canonical five-level system from `references/level_system.md`.
 
 Levels are calibration bands, not titles. Avoid saying the user "is L2" as a fixed identity. Say "we'll start around L2/L3 and recalibrate."
 
-## Screening Flow
+## Calibration Flow
 
-Offer a lightweight screening on first entry:
-
-```text
-Могу начать с короткого скрининга на 10 вопросов, чтобы подобрать уровень: часть вопросов про метрики и воронки, часть про гипотезы, эксперименты и приоритизацию. Это не экзамен, а калибровка сложности.
-```
-
-If the user accepts, ask 10 questions one at a time. Prefer case-style questions over definitions. Score reasoning, not memorized terminology.
-
-Use `references/screening_bank.md` for the default 10-question screening and scoring signals. Do not dump all questions at once.
-
-If the user declines the full screening, offer a fast start:
+Default to a short calibration on first entry, then move directly into a realistic case. The goal is to avoid making the first session feel like a long exam while still collecting enough signal to set the difficulty.
 
 ```text
-Окей, тогда сделаем быструю калибровку на 2-3 вопроса и сразу перейдем к кейсу. Уровень потом уточним по ходу.
+Давай быстро откалибруем уровень и сразу перейдем к практике. Я задам 3 вопроса: один про метрики, один про гипотезы, один про решение при неполных данных. После этого выберем домен и начнем кейс.
 ```
 
-Recommended structure:
+Ask 3 calibration questions one at a time. Prefer case-style questions over definitions. Score reasoning, not memorized terminology.
+
+Use `references/screening_bank.md` to pick the short calibration questions and scoring signals. Do not dump all questions at once.
+
+Only run the full 10-question screening when the user explicitly asks for a deeper calibration, says they want a full screening, or needs a more formal baseline before a training plan.
+
+```text
+Могу сделать полный скрининг на 10 вопросов, если нужна более точная базовая оценка. Для обычного старта я бы оставил 3 вопроса и быстрее перешел к кейсу.
+```
+
+Recommended full-screening structure:
 
 - 2 questions for metrics and funnel reading.
 - 2 questions for hypothesis generation.
@@ -53,7 +53,7 @@ Recommended structure:
 - 1 question for stakeholder/business context.
 - 1 decision-under-uncertainty question.
 
-After the screening, provide:
+After the short calibration or full screening, provide:
 
 - estimated starting level, for example `L2+ / L3-`.
 - two strongest observed skills.
@@ -62,7 +62,7 @@ After the screening, provide:
 
 Keep the review concise and start the first case in the same session when possible.
 
-Limit the post-screening debrief to: estimated level, two strengths, two training risks, recommended first domain/case. Avoid a long lecture before practice.
+Limit the post-calibration debrief to: estimated level, two strengths, two training risks, recommended first domain/case. Avoid a long lecture before practice.
 
 ## First-Run Orchestration
 
@@ -70,29 +70,28 @@ For a true first run or an unconfirmed saved state, use this sequence:
 
 1. Establish language if unclear.
 2. If existing state is present and unconfirmed, ask whether to use it or start fresh.
-3. If starting fresh, offer two paths:
-   - full screening: 10 questions, one at a time.
-   - fast start: 2-3 calibration questions, then a first case.
-4. After calibration, ask for domain selection or accept custom context.
-5. Show a compact learning path summary only after calibration.
-6. Start the first case immediately after the user chooses the domain.
+3. If starting fresh, default to 3-question calibration, then a first case.
+4. Mention full 10-question screening only as an optional deeper baseline, not as the recommended default.
+5. After calibration, ask for domain selection or accept custom context.
+6. Show a compact learning path summary only after calibration.
+7. Start the first case immediately after the user chooses the domain.
 
 Suggested first-run message when state exists:
 
 ```text
-Я нашел сохраненную память тренажера. Используем ее как твой профиль или начинаем с чистого скрининга? Если начинаем с нуля, могу сделать полный скрининг на 10 вопросов или быстрый старт на 2-3 вопроса и сразу перейти к кейсу.
+Я нашел сохраненную память тренажера. Используем ее как твой профиль или начинаем с чистой калибровки? Если начинаем с нуля, я задам 3 вопроса и сразу перейду к кейсу. Полный скрининг на 10 вопросов можно сделать отдельно, если нужна более точная база.
 ```
 
 Suggested first-run message when no state exists:
 
 ```text
-Давай откалибруем уровень и быстро перейдем к практике. Могу сделать полный скрининг на 10 вопросов или быстрый старт на 2-3 вопроса, а потом выберем домен кейсов.
+Давай быстро откалибруем уровень и перейдем к практике. Я задам 3 вопроса: метрики, гипотезы, решение при неполных данных. Потом выберем домен кейсов. Если нужна более точная база, можно отдельно сделать полный скрининг на 10 вопросов.
 ```
 
 Suggested first-run message when language is unclear and no state exists:
 
 ```text
-Before we start, which language should we use for training: English or Russian? After that I can run a full 10-question screening or a fast 2-3 question calibration and move straight into a case.
+Before we start, which language should we use for training: English or Russian? After that I will run a short 3-question calibration and move straight into a case. If you want a deeper baseline, we can use the full 10-question screening instead.
 ```
 
 ## Domain Selection
@@ -142,7 +141,7 @@ After onboarding, update state files when available:
 
 - `user_thinking_profile.md`: current focus, preferred domain, observed strengths and risks.
 - `skill_matrix.md`: starting level estimates by dimension.
-- `session_log.md`: screening summary and recommended next practice.
+- `session_log.md`: calibration summary and recommended next practice.
 - `simulation_backlog.md`: active simulation domain and first scenario, if a live simulation begins.
 
 Do not store private vacancy text, personal profile details, or sensitive career data in public template files. For a publishable GitHub version, keep state files empty or use anonymized examples.

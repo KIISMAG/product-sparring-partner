@@ -1,6 +1,8 @@
 # Банк скрининга
 
-Use these questions for the default 10-question onboarding screening. Ask one question at a time. Adapt numbers and domains lightly if the user has provided context.
+Use these questions for short onboarding calibration and explicit full screening. The default first run should use 3 questions: one metrics/funnel question, one hypothesis question, and one decision-under-uncertainty question. Run all 10 questions only when the user explicitly asks for a full screening or a more formal baseline.
+
+Ask one question at a time. Adapt numbers and domains lightly if the user has provided context.
 
 Score reasoning, not exact wording.
 

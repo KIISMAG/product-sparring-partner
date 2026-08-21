@@ -12,7 +12,7 @@ Practice product decisions before you have to make them at work.
 
 ## What It Does
 
-- Calibrates the user's PM level with a lightweight 10-question screening.
+- Calibrates the user's PM level with a short 3-question first-run calibration, with a full 10-question screening available on request.
 - Supports English or Russian training, with language selection during onboarding when needed.
 - Lets the user choose a practice domain or provide a vacancy/product/company context.
 - Runs live simulations where decisions change the next situation.
@@ -90,17 +90,17 @@ Recommended first prompt:
 Use $product-sparring-partner. I want to train product thinking from scratch.
 ```
 
-The skill should offer a short screening, estimate a starting level, ask for a domain, and begin the first case.
+The skill should run a short 3-question calibration, estimate a starting level, ask for a domain, and begin the first case.
 
 The training path is finite: users progress when they meet level criteria consistently, not after a fixed number of cases.
 
-If the user's language is unclear, the skill should ask whether to train in English or Russian before screening.
+If the user's language is unclear, the skill should ask whether to train in English or Russian before calibration.
 
 Expected first-run flow:
 
 ```text
 1. Language selection, if unclear.
-2. Full screening or fast calibration.
+2. Short 3-question calibration.
 3. Starting level estimate, for example L2+ / L3-.
 4. Domain selection.
 5. Approximate adaptive learning map.
@@ -152,7 +152,11 @@ Ignored `state/*.md` files are expected locally. They should not be committed.
 ## Example Prompts
 
 ```text
-Use $product-sparring-partner. Start with the 10-question screening.
+Use $product-sparring-partner. Start with the full 10-question screening.
+```
+
+```text
+Use $product-sparring-partner. Start with a quick 3-question calibration and then a case.
 ```
 
 ```text
@@ -171,6 +175,10 @@ Russian examples:
 
 ```text
 Use $product-sparring-partner. Давай начнем с полного скрининга на 10 вопросов.
+```
+
+```text
+Use $product-sparring-partner. Давай начнем с быстрой калибровки на 3 вопроса и потом сразу кейс.
 ```
 
 ```text

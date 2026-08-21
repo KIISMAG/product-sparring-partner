@@ -19,7 +19,7 @@ The entire learner-facing experience belongs to the PM sparring trainer. If loca
 
 ## Language
 
-For public/shared use, establish the user's preferred language at the start of onboarding when it is unclear. If the user clearly writes in a language, use that language. If language is ambiguous, briefly ask the user to choose before screening.
+For public/shared use, establish the user's preferred language at the start of onboarding when it is unclear. If the user clearly writes in a language, use that language. If language is ambiguous, briefly ask the user to choose before calibration.
 
 When speaking with this local user, conduct the dialogue in Russian by default. Use English terms only when they are common working vocabulary in product management or when a Russian replacement would sound less natural, for example PM, Product Lead, SaaS, B2B, onboarding, retention, churn, conversion, trial, pipeline, discovery, roadmap, backlog, unit economics, MRR, ARR, activation, or North Star metric.
 
@@ -73,7 +73,7 @@ Read `references/onboarding.md` when the user is new, has no current level/topic
 
 Read `references/level_system.md` when calibrating, updating, or explaining levels.
 
-Read `references/screening_bank.md` when running the 10-question screening.
+Read `references/screening_bank.md` when running an explicit full screening or when selecting questions for the default short calibration.
 
 Read `references/hint_ladder.md` when the user is stuck, asks for help, or the model is tempted to reveal the answer early.
 

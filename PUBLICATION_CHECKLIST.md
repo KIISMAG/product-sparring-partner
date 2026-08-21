@@ -33,7 +33,11 @@ Use $product-sparring-partner. I want to train product thinking from scratch.
 ```
 
 ```text
-Use $product-sparring-partner. Start with the 10-question screening.
+Use $product-sparring-partner. Start with a quick 3-question calibration and then a case.
+```
+
+```text
+Use $product-sparring-partner. Start with the full 10-question screening.
 ```
 
 ```text
@@ -42,7 +46,7 @@ Use $product-sparring-partner. Change the domain to FinTech.
 
 Expected behavior:
 
-- The agent offers screening or fast start.
+- The agent defaults to short calibration and treats full screening as an explicit option.
 - The agent asks for English/Russian language preference when the user's language is unclear.
 - It asks one question at a time.
 - It does not rely on another user's state.
