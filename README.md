@@ -18,6 +18,7 @@ Practice product decisions before you have to make them at work.
 - Runs live simulations where decisions change the next situation.
 - Gives concise feedback on reasoning, assumptions, risks, trade-offs, and metrics.
 - Shows progress without over-grading: local signals after answers, compact progress every few substantial turns, and official level updates at case or level boundaries.
+- Ends practice turns with a clear next question or numbered quick actions so the learner does not need to type "continue".
 - Uses adaptive practice: if the learner repeats the same gap, it steps back to a focused exercise and a small transfer check before returning to the case.
 - Adds stakeholder pressure from roles such as CEO, Sales, Support, Finance, Engineering, Legal, Customer Success, partners, or customers.
 - Maintains optional local memory through private `state/` files.

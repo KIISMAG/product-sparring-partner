@@ -54,6 +54,22 @@ Ask one question at a time. Prefer prompts that expose reasoning:
 
 When the user answers, do not immediately solve the case. Push the thinking forward.
 
+Never end a practice turn with only review, explanation, or progress. Always leave the learner with one clear next action:
+
+- a direct next question, if the case should continue;
+- or a short `Следующий ход` block with 2-4 numbered quick actions when the learner can choose the next mode.
+
+Use numbered quick actions as button-like affordances because the skill cannot create native UI buttons. Keep them short enough that the learner can answer with a single number.
+
+Example:
+
+```text
+Следующий ход:
+1. Продолжить кейс
+2. Короткое упражнение на стоп-сигналы
+3. Показать прогресс
+```
+
 Use a visible but lightweight progress cadence:
 
 - After each learner answer, include a local signal inside the review when useful, for example: `Это L3-сигнал по диагностике, но риск пока не назван.`
@@ -94,5 +110,6 @@ End with:
 - разбор по ключевым измерениям
 - следующий фокус практики
 - итог сессии после финальной проверки или закрытия уровня
+- `Следующий ход` with 2-4 numbered options, unless the user explicitly asked to stop
 
 Update state only after the close.
