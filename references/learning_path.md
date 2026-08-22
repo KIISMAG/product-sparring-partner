@@ -140,7 +140,15 @@ Keep this artifact brief and evidence-based. It should summarize the learning st
 
 ## User-Facing Progress Summary
 
-After each substantial simulation round or level-evidence moment, provide a compact progress summary:
+Use three progress layers so the learner can feel movement without turning every answer into an evaluation form:
+
+1. Local signal after an answer, when useful: name the observed level evidence or gap in one short sentence.
+2. Compact progress block after 2-3 substantial answers, after a meaningful simulation round, or after a clear level-evidence moment.
+3. Official level/skill update at the end of a case, final check, or training block, with memory updates only when evidence justifies them.
+
+Do not show the full progress block after every answer. The training remains practice-first, not dashboard-first.
+
+Compact progress block:
 
 ```text
 Текущая цель: L3
@@ -150,4 +158,4 @@ After each substantial simulation round or level-evidence moment, provide a comp
 Статус выхода: не готов / почти готов / готов к финальной проверке
 ```
 
-Keep the summary short. The training remains practice-first, not dashboard-first.
+Keep the summary short and evidence-based. Do not invent progress to make the learner feel advancement.
