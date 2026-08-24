@@ -160,4 +160,4 @@ Compact progress block:
 
 Keep the summary short and evidence-based. Do not invent progress to make the learner feel advancement.
 
-After a progress block, continue the practice flow by asking the next question or by offering a short `Следующий ход` menu. Do not leave the learner to type "continue" just to receive the next task.
+After a progress block, continue the practice flow by asking the next question the trainer chooses. Use a short `Следующий ход` menu only at genuine learner-choice boundaries. Do not leave the learner to type "continue" just to receive the next task, and do not make the learner manage the curriculum after every turn.
